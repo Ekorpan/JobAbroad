@@ -1,0 +1,44 @@
+{
+  "cities": [
+    {
+      "city": "Berlin",
+      "country": "Germany"
+    },
+    {
+      "city": "London",
+      "country": "England"
+    },
+    {
+      "city": "Warszawa",
+      "country": "Poland"
+    },
+    {
+      "city": "Brno",
+      "country": "Czech Republic"
+    },
+    {
+      "city": "Tallin",
+      "country": "Estony"
+    },
+    {
+      "city": "Paris",
+      "country": "France"
+    },
+    {
+      "city": "Kiev",
+      "country": "Ukraine"
+    },
+    {
+      "city": "Milan",
+      "country": "Italy"
+    },
+    {
+      "city": "Viena",
+      "country": "Austria"
+    },
+    {
+      "city": "Gamburg",
+      "country": "Germany"
+    }
+  ]
+}
