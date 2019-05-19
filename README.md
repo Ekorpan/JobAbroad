@@ -1,2 +1,9 @@
-# Starter for SCSS
-sass --watch scss/global.scss:css/styles.min.css --style compressed
+# Starter for Gulp Project
+To initialize project: npm i
+
+To add package: npm install [package_name] --save / npm install [package_name] --save-dev
+
+## Gulp tasks
+gulp watch / gulp - run watcher for html/scss/js files
+
+gulp build - build minified project
