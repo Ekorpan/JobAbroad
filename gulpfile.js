@@ -69,6 +69,7 @@ function browserSync(done) {
     server: {
       baseDir: "./app/"
     },
+    browser: 'chrome',
     port: 9000
   });
   done();
