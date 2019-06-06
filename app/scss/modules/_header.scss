@@ -2,6 +2,10 @@
 	background: url('../images/back.jpeg');
 	min-height: 100vh;
 	background-size: cover;
+	@media (max-width: $width-sm) {
+		background: none;
+
+	}
 	&__navigation {
 		display: flex;
 		justify-content: space-between;
@@ -9,11 +13,26 @@
 		width: 100%;
 		background-color: #ffc49d;
 		height: 100px;
+		
+		@media (max-width: $width-sm) {
+			display: flex;
+			height: 65px;
+			background-color: rgba(255, 196, 157, 0.1);
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			
+			
+			
+		}
 
 	}
 	&__logo {
+		@include size(200px);
 		display: inline-block;
 		padding-left: 2.8%;
+
+		@media (max-width: $width-sm) {
+			padding-left: 0;
+		}
 
 	}
 	&__nav {
@@ -23,6 +42,40 @@
 		padding-right: 5.2%;
 		align-items: center;
 		text-align: center;
+		
+		@media (max-width: $width-sm) {
+			flex-direction: column;
+			justify-content: space-around;
+			-webkit-align-items: flex-start;
+			align-items: flex-start;
+			width: 40%;
+			padding-right: 0;
+			background-color: #FFF;
+			border: 1px solid #729CA2;
+			border-radius: 5px;
+			@include pos($t:65px, $r:0);
+			margin-right: -250px;
+			display: none;
+		}
+	}
+
+	.text-bg {
+		background: none;
+		
+		@media (max-width: $width-sm) {
+			display: flex;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-webkit-justify-content: flex-end;
+			justify-content: flex-end;
+			background: url('../images/main-bg-mobile.jpg') no-repeat top center;
+			background-size: cover;
+			width: 100vw;
+			height: 400px;
+			
+			
+		}
 	}
 	&__title {
 		font-weight: 600;
@@ -30,6 +83,10 @@
 		line-height: 59px;
 		padding: 34px 2.43%;
 		color: #465461;
+		@media (max-width: $width-sm) {
+			display: none;
+			
+		}
 	}
 	&__text1 {
 
@@ -39,6 +96,16 @@
 		line-height: 29px;
 		padding: 40px 10.55%;
 		color: #465461;
+		
+		@media (max-width: $width-sm) {
+			color: #FFF;
+			font-size: 1.125rem;
+			line-height: 22px;
+			font-weight: 600;
+			padding-bottom: 0;
+			width: 80%;
+			
+		}
 	}
 	&__text2 {
 
@@ -48,6 +115,15 @@
 		line-height: 29px;
 		color: #465461;
 		padding: 27px 10.55%;
+		@media (max-width: $width-sm) {
+			color: #FFF;
+			font-size: 1.125rem;
+			line-height: 22px;
+			font-weight: 600;
+			padding-top: 0;
+			padding-bottom: 62px;
+			
+		}
 	}
 	&__footer {
 		display: flex;
@@ -57,10 +133,18 @@
 		background-color: #fff;
 
 		height: 100px;
+		@media (max-width: $width-sm) {
+			height: 70px;
+			vertical-align: middle;
+		}
 	}
 	&__logo1 {
 		display: inline-block;
 		padding: 44px 2.43%;
+		
+
+		
+		
 	}
 	&__nav1 {
 		display: flex;
@@ -70,21 +154,112 @@
 		display: flex;
 		align-items: center;
 		text-align: center;
+		@media (max-width: $width-sm) {
+			width: 100%;
+			text-align: center;
+			-webkit-justify-content: space-around;
+			justify-content: space-around;
+			vertical-align: middle;
+		}
 	}
 	&__desc {
 		font-weight: 600;
 		font-size: .875rem;
 		line-height: 17px;
 		color: #465461;
+		@media (max-width: $width-sm) {
+			display: none;
+			
+		}
+	}
+}
+a.item {
+	@media (max-width: $width-sm) {
+		color: #000;
+		width: 100%;
+		padding-left: 15px;
+		padding-bottom: 5px;
+		font-size: 0.75rem;
+		text-align: left;
+		line-height: 30px;
+		border-bottom: 1px solid #729CA2;
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+	}
+}
+.mobile-title {
+	display: none;
+	font-family: $title;
+	font-size: 1.75rem;
+	font-weight: 500;
+	color: $text;
+	
+	@media (max-width: $width-sm) {
+		display: inline-block;
+		align-self: center;
+
+	}
+}
+.mobile-menu {
+	display: none;
+	
+	
+	@media (max-width: $width-sm) {
+		display: inline-block;
+		align-self: center;
+		margin-right: 3.5%;
+
+
+	}
+
+	&.mobile-menu--active {
+		
+		@media (max-width: $width-sm) {
+			transform: scale(1.3);
+
+			+ .header__nav {
+				margin-right: 0;
+				display: flex;
+			}
+
+
+		}
+	}
+}
+
+
+
+.navigation-container {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	width: 100%;
+	background-color: #ffc49d;
+	height: 100px;
+	
+	@media (max-width: $width-sm) {
+		display: flex;
+		height: auto;
+		align-item: center;
+		display: flex;
+		background: rgba(255, 196, 157, 1);
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	}
 }
 
 .logo__img {
-	@include size(100px)
+	@include size(101px)
 	transition: all 2s;
 
 	&:hover {
 		transform: rotate(360deg);
+	}
+
+	@media (max-width: $width-sm) {
+		@include size(58px);
 	}
 }
 .nav__item {
@@ -114,6 +289,14 @@ label {
 	width: 100%;
 	margin-left: 2.7%;
 	color: $text;
+	
+	@media (max-width: $width-sm) {
+		max-width: 100%;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+
+	}
 
 
 	&__form	{
@@ -133,6 +316,13 @@ label {
 		width: 75%;
 		-webkit-justify-content: space-between;
 		justify-content: space-between;
+		
+		@media (max-width: $width-sm) {
+			width: 100%;
+			padding-left: 5%;
+			padding-right: 5%;
+			
+		}
 
 	}
 
@@ -152,7 +342,6 @@ label {
 			border: 2px solid #729ca2;
 
 		}
-
 
 	}
 
@@ -190,13 +379,14 @@ label {
 		font-size: 18px;
 		line-height: 22px;
 		margin-bottom: 7px;
+		
 
 	}
 	&__job-type {
 		height: 35px;
 		-webkit-border-radius: 5px;
 		border-radius: 5px;
-		    
+
 	}
 	&__button {
 		-webkit-align-self: flex-start;
@@ -212,10 +402,17 @@ label {
 		cursor: pointer;
 		border: none;
 		
+		@media (max-width: $width-sm) {
+			margin-left: 5%;
+			
+		}
+		
+
+		
 		&:hover {
-    		color: #d1d4d7;
-    		text-decoration: none;
-    		background: #d17c45;
+			color: #d1d4d7;
+			text-decoration: none;
+			background: #d17c45;
 		}
 		&:active {
 			box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -227,11 +424,23 @@ label {
 .country {
 	width: 75%;
 	margin-bottom: 34px;
+	@media (max-width: $width-sm) {
+		width: 100%;
+		padding-left: 5%;
+		padding-right: 5%;
+
+	}
 }
 .job {
 	text-align: left;
 	width: 75%;
 	margin-bottom: 55px;
+	@media (max-width: $width-sm) {
+		width: 100%;
+		padding-left: 5%;
+		padding-right: 5%;
+
+	}
 }
 
 input {
@@ -255,7 +464,7 @@ input[placeholder]:focus {
 	color: $text;
 	border-color: #729CA2;
 	&:hover,
-	 {
+	{
 		background: #FFF;
 		color: $text;
 	}
@@ -265,9 +474,9 @@ input[placeholder]:focus {
 	border: none;
 }
 .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary {
-    color: $text;
-    background-color: #FFF;
-    border-color: #729CA2;
+	color: $text;
+	background-color: #FFF;
+	border-color: #729CA2;
 }
 
 .show>.btn-primary.dropdown-toggle {
@@ -278,8 +487,8 @@ input[placeholder]:focus {
 	&:active,
 	&:focus {
 		border-color: #729CA2;
-	background-color: #FFF;
-	color: $text;
+		background-color: #FFF;
+		color: $text;
 	}
 }
 .dropdown-item {
@@ -316,5 +525,33 @@ input[placeholder]:focus {
 
 }
 .bootstrap-select.show-tick .dropdown-menu li a span.text {
-    margin-right: 0;
+	margin-right: 0;
+}
+
+.ui-menu-item-wrapper,
+.ui-menu-item {
+	transition: none;
+}
+
+
+
+.error {
+	text-align: center;
+	color: red;
+}
+
+#ui-id-1 {
+	transition: none;
+	
+}
+
+
+
+.error-row .field{
+	border-color: red;
+}
+.error {
+	color: red;
+	font-size: 14px;
+	margin: -5px 0 5px 33.33%;
 }
