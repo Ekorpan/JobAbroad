@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Starter">
 	<meta name="author" content="Team">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title>Jobabroad</title>
 	<link rel="icon" href="images/favicon.png">
 
@@ -15,62 +16,69 @@
 </head>
 <body>
 	<div class="header">
-		<div class="container">
+		
 
 		<div class="header__navigation">
-			<div class="header__logo">
-				<a href="#"><img class="logo__img" src="images/logo.png" alt="logo"></a>
+			<div class="container navigation-container">
+				<div class="header__logo">
+					<a href="#"><img class="logo__img" src="images/logo.svg" alt="logo"></a>
+				</div>
+				<h2 class="mobile-title">JobAbroad</h2>
+				<a class="mobile-menu"><img src="images/mobile-menu.svg"></a>
+				<nav class="header__nav">
+					<a class="nav__item item" href="404.html">Become a host</a>
+					<a class="nav__item item" href="404.html">Sign up</a>
+					<a class="nav__item item" href="404.html">Sign in</a>
+					<a class="nav__item item" href="404.html">About service</a>
+				</nav>
 			</div>
-			<nav class="header__nav">
-				<a class="nav__item" href="404.html">Become a host</a>
-				<a class="nav__item" href="404.html">Sign up</a>
-				<a class="nav__item" href="404.html">Sign in</a>
-				<a class="nav__item" href="404.html">About service</a>
-			</nav>
 
 		</div>
-		<h1 class="header__title">
-			JobAbroad
-		</h1>
-		<p class="header__text1">
-			New opportunities anywhere in the world.
-		</p>
-		<p class="header__text2">
-			Discover them!
-		</p>
+		<div class="container">
+			<div class="text-bg">
+			<h1 class="header__title">
+				JobAbroad
+			</h1>
+			<p class="header__text1">
+				New opportunities anywhere in the world.
+			</p>
+			<p class="header__text2">
+				Discover them!
+			</p>
+			</div>
 
-		<div class="search">
-			<form class="search__form">
-				<div class="country">
-					<label for="country" class="search__country">Country/city</label>
-					<input type="text" class="search__country-input" id="country" placeholder="Where are you going?" required>
-				</div>
-				<div class="search__date">
-					<div class="depart">
-						<label for="depart" class="search__depart">Depart</label>
-						<input type="date" class="search__depart-input" id="depart" required>
+			<div class="search">
+				<form class="search__form">
+					<div class="country roww">
+						<label for="country" class="search__country">Country/city</label>
+						<input type="text" class="search__country-input field" id="country" placeholder="Where are you going?" >
 					</div>
-					<div class="arrive">
-						<label for="arrive" class="search__arrive">Arrive</label>
-						<input type="date" class="search__arrive-input" id="arrive" required>
+					<div class="search__date ">
+						<div class="depart roww">
+							<label for="depart" class="search__depart">Depart</label>
+							<input type="date" class="search__depart-input field" id="depart" >
+						</div>
+						<div class="arrive roww">
+							<label for="arrive" class="search__arrive">Arrive</label>
+							<input type="date" class="search__arrive-input field" id="arrive" >
+						</div>
 					</div>
-				</div>
-				<div class="job select">
-					<label for="job" class="search__job">Type of job</label>
-					<select class="search__job-type selectpicker" required data-style="btn-primary" multiple required>
+					<div class="job select">
+						<label for="job" class="search__job">Type of job</label>
+						<select class="search__job-type selectpicker field"  data-style="btn-primary" multiple field>
 
-						<option value="j1">House repairing</option>
-						<option value="j2">Small repairs in the house</option>
-						<option value="j3">Cleaning in the house</option>
-						<option value="j4">Work on farm</option>
-						<option value="j5">Animal care</option>
-						<option value="j6">Babysiting/Nursing</option>
-						<option value="j7">Other</option>
-					</select>
-				</div>
-				<input type="submit" class="search__button" value="Search">
-			</form>
-		</div>
+							<option value="j1">House repairing</option>
+							<option value="j2">Small repairs in the house</option>
+							<option value="j3">Cleaning in the house</option>
+							<option value="j4">Work on farm</option>
+							<option value="j5">Animal care</option>
+							<option value="j6">Babysiting/Nursing</option>
+							<option value="j7">Other</option>
+						</select>
+					</div>
+					<input type="submit" class="search__button" value="Search">
+				</form>
+			</div>
 		</div>
 
 	</div>
@@ -85,7 +93,7 @@
 		</nav>
 
 	</div>
-
+ 
 
 	<!-- Scripts -->
 	<script src="js/main.min.js"></script>
