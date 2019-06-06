@@ -30,7 +30,7 @@
 		});
 
 		//requred error
-		function showError(property) {
+		/*function showError(property) {
 
 			var span = `<span class="error">This field is required.</span>`
 			$(`.field[name="${property}"]`).parents('.row')
@@ -41,7 +41,7 @@
 		function removeErrors() {
 			$('.error-row').removeClass('error-row');
 			$('.error').remove();
-		};
+		};*/
 		
 	});
 
