@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Team">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Jobabroad</title>
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="css/styles.min.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div class="header-profile" style="min-height: auto">
+
+
+		<div class="header-profile__navigation">
+			<div class="container container--navigation">
+				<div class="header-profile__logo">
+					<a href="#"><img class="logo__img" src="images/logo.svg" alt="logo"></a>
+				</div>
+				<h2 class="mobile-title">JobAbroad</h2>
+				<a class="mobile-menu"><img src="images/mobile-menu.svg"></a>
+				<nav class="header__nav">
+					<a class="nav__item item" href="404.html">Become a host</a>
+					<a class="nav__item item" href="404.html">Sign up</a>
+					<a class="nav__item item" href="404.html">Sign in</a>
+					<a class="nav__item item" href="404.html">About service</a>
+				</nav>
+			</div>
+
+		</div>		
+	</div>
+
+
+	<div class="container container--search">
+		<div class="row">
+			<div class="col-sm-12 col-lg-7 search-page ">
+				<h3 class="search-page__title">Search</h3>
+
+				<form class="search-page__form">
+					<div class="country roww">
+						<label for="country" class="search-page__country">Country/city</label>
+						<input type="text" class="search-page__country-input field country" id="country" name="country" placeholder="Where are you going?" >
+					</div>
+					<div class="search-page__date ">
+						<div class="depart search-page__depart-wrapper">
+							<label for="depart" class="search-page__depart">Depart</label>
+
+
+							<input type="text"  class="search-page__depart-input field" id="depart" size="14">
+						</div>
+						<div class="arrive search-page__arrive-wrapper">
+							<label for="arrive" class="search-page__arrive">Arrive</label>
+
+							<input type="text" class="search-page__depart-input field arrive" id="arrive" size="14" name="arrive">
+
+						</div>
+					</div>
+					<div class="job select job-search">
+						<label for="job" class="search-page__job">Type of job</label>
+						<select class="search-page__job-type selectpicker field"  data-style="btn-primary" multiple field>
+
+							<option value="j1">House repairing</option>
+							<option value="j2">Small repairs in the house</option>
+							<option value="j3">Cleaning in the house</option>
+							<option value="j4">Work on farm</option>
+							<option value="j5">Animal care</option>
+							<option value="j6">Babysiting/Nursing</option>
+							<option value="j7">Other</option>
+						</select>
+					</div>
+
+					<div class="job select travellers">
+						<label for="job" class="search-page__job">Number of travellers</label>
+						<select class="search-page__job-type selectpicker field"  data-style="btn-primary" field>
+
+							<option value="j1">1</option>
+							<option value="j2">2</option>
+							<option value="j3">3</option>
+							<option value="j4">4</option>
+							<option value="j5">5</option>
+
+						</select>
+					</div>
+
+
+					<div class="search-extend">
+						<div class="search-extend__check-wrapper">
+							<div class="search-extend__job">
+								<p class="search-extend__title">Job info</p>
+								<div class="search-extend__form">
+									<p class="search-extend__form-title">Type of job</p>
+									<p class="search-extend__option-text"><input class="search-extend__option" type="checkbox" name="job">House repairing</p>
+									<p class="search-extend__option-text"><input class="search-extend__option" type="checkbox" name="job">Small repairs in the house</p>
+									<p class="search-extend__option-text"><input class="search-extend__option" type="checkbox" name="job">Cleaning in the house</p>
+									<p class="search-extend__option-text"><input class="search-extend__option" type="checkbox" name="job">Work on farm</p>
+									<p class="search-extend__option-text"><input class="search-extend__option" type="checkbox" name="job">Animal care</p>
+									<p class="search-extend__option-text"><input class="search-extend__option" type="checkbox" name="job">Babysiting/Nursing</p>
+									<p class="search-extend__option-text"><input class="search-extend__option" type="checkbox" name="job">Other</p>
+
+									<button class="search-extend__clear">Clear all</button>
+
+								</div>
+							</div>
+							<div class="search-extend__accomodation">
+								<p class="search-extend__title">Accomodation</p>
+								<div class="search-extend__form">
+									<p class="search-extend__form-title">Facillity types</p>
+
+									<p class="search-extend__option-text"><input class="search-extend__option" type="checkbox" name="job">Private apartment</p>
+									<p class="search-extend__option-text"><input class="search-extend__option" type="checkbox" name="job">Public room</p>
+									<p class="search-extend__option-text"><input class="search-extend__option" type="checkbox" name="job">Private room</p>
+									<p class="search-extend__option-text"><input class="search-extend__option" type="checkbox" name="job">Shared room</p>
+									<p class="search-extend__option-text"><input class="search-extend__option" type="checkbox" name="job">Meals included</p>
+									<p class="search-extend__option-text"><input class="search-extend__option" type="checkbox" name="job">Extra payment</p>
+									<p class="search-extend__option-text"><input class="search-extend__option" type="checkbox" name="job">Other</p>
+
+									<button class="search-extend__clear">Clear all</button>
+
+								</div>
+							</div>
+						</div>
+						<div class="search-host">
+							<h3 class="search-host__title">host info</h3>
+							<div class="search-host__wrapper-first">
+								<div class="search-host__male">
+									<p class="search-host__select-title">Gender</p>
+									<select class="search-host__male-select">
+										<option value="" disabled selected>All</option>
+										<option>Male</option>
+										<option>Female</option>
+									</select>
+								</div>
+
+								<div class="search-host__year">
+									<p class="search-host__select-title">Age</p>
+									<div class="search-host__wrapper-second">
+										<select class="yearselect search-host__year-select">
+										</select>
+										<p class="search-host__year-between">to</p>
+										<input class="yearselect search-host__year-select" value="2000">
+									</div>
+
+								</div>
+							</div>
+							<div class="search-host__language">
+								<p class="search-host__select-title">Languages spoken</p>
+								<select class="search-host__language-select">
+									<option value="English" selected disabled>Example: English</option>
+									<option value="English">English</option>
+									<option value="">Spanish</option>
+									<option value="">Deutschland</option>
+									<option value="">Italian</option>
+									<option value="">Ukrainian</option>
+								</select>
+							</div>
+
+							<div class="search-host__smooking">
+								<p class="search-host__select-title">Smooking is allowed</p>
+								<div class="search-host__wrapper-third">
+									<form action="">
+										<p><input name="name" value="1" type="radio" class="search-host__smooking-select">Yes</p>
+										<p><input name="name" value="2" type="radio" class="search-host__smooking-select">No</p>
+										<p><input name="name" value="3" type="radio" class="search-host__smooking-select">No preference</p>
+									</form>
+								</div>
+								
+							</div>
+
+							<div class="search-host__keywords">
+								<p class="search-host__select-title search-host__select-title--keywords">Keywords</p>
+								<input class="search-host__keywords-select" type="text" name="text">
+							</div>
+
+
+
+						</div>
+					</div>
+
+
+
+
+
+					<div class="search-page__link-wrapper">
+						<a class="search-page__link" href="#depart">Change dates</a>
+						<a class="search-page__link search-page__link--search" href="#">Search</a>
+					</div>
+				</form>
+
+
+				
+
+
+			</div>
+
+			<div class="col-sm-12 col-lg-5">
+				<div class="map" id="map"></div>
+				<p class="map-name">San-Sebastian, Basque Country, Spain</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="filtres col-sm-12 col-lg-7">
+				<p class="filtres__button">More filtres</p>
+			</div>
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+		<div class="container">
+
+			<div class="profile-footer">
+				<p class="profile-footer__text">&copy; 2019 JobAbroad, Inc. All rights reserved</p>
+
+				<div class="profile-footer__item">
+
+					<a href="#" class="profile-footer__link icon-twitter"></a>
+					<a href="#" class="profile-footer__link icon-facebook"></a>
+					<a href="#" class="profile-footer__link icon-instagram"></a>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+
+	<!-- Scripts -->
+	<script src="js/main.min.js"></script>
+</body>
+</html>

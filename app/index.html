@@ -41,31 +41,35 @@
 		</div>
 		<div class="container">
 			<div class="text-bg">
-			<h1 class="header__title">
-				JobAbroad
-			</h1>
-			<p class="header__text1">
-				New opportunities anywhere in the world.
-			</p>
-			<p class="header__text2">
-				Discover them!
-			</p>
+				<h1 class="header__title">
+					JobAbroad
+				</h1>
+				<p class="header__text1">
+					New opportunities anywhere in the world.
+				</p>
+				<p class="header__text2">
+					Discover them!
+				</p>
 			</div>
 
 			<div class="search">
 				<form class="search__form">
 					<div class="country roww">
 						<label for="country" class="search__country">Country/city</label>
-						<input type="text" class="search__country-input field" id="country" placeholder="Where are you going?" >
+						<input type="text" class="search__country-input field country" id="country" name="country" placeholder="Where are you going?" >
 					</div>
 					<div class="search__date ">
 						<div class="depart roww">
 							<label for="depart" class="search__depart">Depart</label>
-							<input type="date" class="search__depart-input field" id="depart" >
+							<!--<input type="date" class="search__depart-input field" id="depart">-->
+
+							<input type="text"  class="search__depart-input field" id="depart" size="14">
 						</div>
 						<div class="arrive roww">
 							<label for="arrive" class="search__arrive">Arrive</label>
-							<input type="date" class="search__arrive-input field" id="arrive" >
+
+							<input type="text" class="search__depart-input field arrive" id="arrive" size="14" name="arrive">
+							<!--<input type="date" class="search__arrive-input field" id="arrive" >-->
 						</div>
 					</div>
 					<div class="job select">
@@ -81,24 +85,28 @@
 							<option value="j7">Other</option>
 						</select>
 					</div>
-					<input type="submit" class="search__button" value="Search">
+					<a type="submit" href="search.html" class="search__button searching">Search</a>
 				</form>
 			</div>
 		</div>
 
 	</div>
-	<div class="header__footer">
-		<div class="header__logo1">
-			<p class="header__desc">© 2019 JobAbroad, Inc. All rights reserved</p>
-		</div>
-		<nav class="header__nav1">
-			<a class="nav__item" href="" target="_blank"><img src="images/twitter.png"></a>
-			<a class="nav__item" href="#" target="_blank"><img src="images/facebook.png"></a>
-			<a class="nav__item" href="#" target="_blank"><img src="images/instagram.png"></a>
-		</nav>
+	<footer class="footer">
+		<div class="container">
 
-	</div>
- 
+			<div class="profile-footer">
+				<p class="profile-footer__text">&copy; 2019 JobAbroad, Inc. All rights reserved</p>
+
+				<div class="profile-footer__item">
+
+					<a href="#" class="profile-footer__link icon-twitter"></a>
+					<a href="#" class="profile-footer__link icon-facebook"></a>
+					<a href="#" class="profile-footer__link icon-instagram"></a>
+				</div>
+			</div>
+		</div>
+
+	</footer>
 
 	<!-- Scripts -->
 	<!--build:js js/main.min.js -->

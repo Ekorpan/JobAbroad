@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Team">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Jobabroad</title>
+	<link rel="icon" href="images/favicon.png">
+
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="js/libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/libs/bootstrap-select.min.css">
+	<link rel="stylesheet" href="css/global.min.css">
+	<!--endbuild-->
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+	<svg width="0" height="0" class="hidden">
+		<symbol viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" id="handyman">
+			<path d="M3.753 7.284c.38 0 .755-.06 1.115-.175L7.01 9.255l2.346-2.352-2.141-2.148a3.662 3.662 0 0 0-.889-3.69A3.598 3.598 0 0 0 3.763 0a3.67 3.67 0 0 0-1.57.355.25.25 0 0 0-.069.404l2.254 2.26a.876.876 0 0 1 .258.622.876.876 0 0 1-.258.623.896.896 0 0 1-1.242 0L.882 2.003a.25.25 0 0 0-.402.07 3.655 3.655 0 0 0 .707 4.144 3.6 3.6 0 0 0 2.566 1.066zm11.444 4.18c-.381 0-.756.06-1.116.175l-2.37-2.375-2.347 2.353 2.37 2.376a3.665 3.665 0 0 0 .888 3.69 3.599 3.599 0 0 0 2.564 1.064 3.67 3.67 0 0 0 1.57-.355.25.25 0 0 0 .069-.403l-2.253-2.26a.876.876 0 0 1 0-1.245.895.895 0 0 1 1.241 0l2.254 2.26a.25.25 0 0 0 .402-.07 3.655 3.655 0 0 0-.707-4.145 3.598 3.598 0 0 0-2.565-1.065z"
+			fill="#465461"></path>
+			<path d="M14.233 6.106s.392.345.715.184c.366-.185 1.395.833 1.724 1.071 0 0 .003 0 .007.003l-.18.18a.602.602 0 1 0 .853.855l1.421-1.424a.608.608 0 0 0 0-.856.603.603 0 0 0-.853 0l-.237.238c-.196-.271-.522-.733-.48-.886.173-.67-1.189-2.252-1.189-2.252C12.632-.17 10.373-.094 9.298.276c-.431.15-.351.243.097.322 3.26.571 3.665 2.5 3.112 3.243-.212.287.098.634.098.634l.116.116-5.505 5.52c.074.044.147.096.211.16l.926.928c.063.063.114.135.159.21l5.505-5.52.216.217zm-7.176 4.536a.572.572 0 0 0-.767-.028l-6.118 5.5a.483.483 0 0 0-.027.715l1.667 1.67a.48.48 0 0 0 .712-.025l5.487-6.136a.575.575 0 0 0-.028-.768l-.926-.928z"
+			fill="#465461"></path>
+		</symbol>
+		<symbol viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" id="earth">
+			<path d="M12.803 2.197A7.45 7.45 0 0 1 15 7.5c0 2.003-.78 3.887-2.197 5.303A7.45 7.45 0 0 1 7.5 15a7.45 7.45 0 0 1-5.303-2.197A7.45 7.45 0 0 1 0 7.5a7.45 7.45 0 0 1 2.197-5.303A7.451 7.451 0 0 1 7.5 0a7.45 7.45 0 0 1 5.303 2.197zm-.663 9.943a6.518 6.518 0 0 0 1.792-3.326c-.198.29-.387.399-.504-.252-.12-1.06-1.094-.383-1.706-.76-.645.435-2.094-.844-1.848.599.38.65 2.051-.871 1.218.506-.53.96-1.943 3.09-1.759 4.193.023 1.607-1.642.335-2.216-.198-.386-1.068-.132-2.935-1.141-3.459-1.096-.047-2.037-.147-2.461-1.372-.256-.876.272-2.18 1.21-2.382C6.102 4.825 6.593 6.7 7.882 6.735c.4-.419 1.491-.552 1.582-1.021-.846-.15 1.073-.712-.081-1.031-.637.074-1.047.66-.709 1.156-1.234.288-1.273-1.786-2.46-1.131-.03 1.034-1.936.335-.659.125.439-.192-.716-.747-.092-.646.306-.017 1.338-.378 1.059-.621.574-.357 1.057.853 1.619-.028.406-.678-.17-.803-.68-.46-.286-.32.507-1.014 1.207-1.314.233-.1.456-.154.626-.139.353.407 1.004.478 1.038-.049A6.538 6.538 0 0 0 7.5.938c-1.43 0-2.79.454-3.916 1.294.303.139.475.311.183.532-.226.675-1.145 1.58-1.951 1.452a6.49 6.49 0 0 0-.813 2.351c.676.224.831.666.686.814-.344.3-.555.726-.664 1.191A6.514 6.514 0 0 0 2.86 12.14a6.52 6.52 0 0 0 4.64 1.922 6.52 6.52 0 0 0 4.64-1.922z"
+			fill="#465461"></path>
+		</symbol>
+		<symbol viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="geo">
+			<path d="M7.5 0C3.364 0 0 3.25 0 7.243c0 4.957 6.712 12.233 6.998 12.54a.692.692 0 0 0 1.004 0C8.288 19.477 15 12.2 15 7.244 15 3.25 11.636 0 7.5 0zm0 10.887c-2.08 0-3.773-1.634-3.773-3.644C3.727 5.233 5.419 3.6 7.5 3.6c2.08 0 3.773 1.635 3.773 3.644 0 2.01-1.692 3.644-3.773 3.644z"
+			fill="#465461"></path>
+		</symbol>
+		<symbol viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="male">
+			<path d="M16.168 0v1.224h1.474L14.766 3.78a5.778 5.778 0 0 0-4.007-1.584c-2.11 0-3.951 1.098-4.907 2.717a6.022 6.022 0 0 0-.247-.006C2.515 4.907 0 7.263 0 10.157c0 2.689 2.168 4.911 4.951 5.216V17H2.995v1.224H4.95V20h1.31v-1.776H8.3V17H6.259v-1.627c1.832-.2 3.397-1.232 4.253-2.68.082.003.164.005.247.005 3.09 0 5.605-2.356 5.605-5.251 0-.984-.29-1.905-.795-2.693l3.124-2.775v1.52H20V0h-3.832zM5.605 14.184c-2.37 0-4.298-1.806-4.298-4.026 0-2.134 1.78-3.885 4.023-4.018a4.93 4.93 0 0 0-.176 1.307c0 2.362 1.674 4.364 3.968 5.022-.778 1.036-2.064 1.715-3.517 1.715zm4.105-2.832c-1.864-.44-3.249-2.024-3.249-3.905 0-.415.068-.816.193-1.194 1.865.44 3.249 2.024 3.249 3.905 0 .415-.068.816-.193 1.194zm1.324.113a4.93 4.93 0 0 0 .176-1.307c0-2.362-1.673-4.365-3.968-5.022C8.02 4.099 9.307 3.42 10.76 3.42c2.37 0 4.298 1.806 4.298 4.026 0 2.134-1.78 3.884-4.023 4.018z"
+			fill="#465461"></path>
+		</symbol>
+		<symbol viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg" id="friends">
+			<path d="M12.07 2.889a3.634 3.634 0 0 1 1.69 2.7 2.933 2.933 0 1 0-1.691-2.7zm-1.922 6.006a2.933 2.933 0 1 0 0-5.867 2.933 2.933 0 0 0 0 5.867zm1.244.2h-2.49a3.76 3.76 0 0 0-3.755 3.755v3.044l.008.048.21.066c1.976.617 3.693.823 5.106.823 2.76 0 4.36-.787 4.459-.837l.196-.1h.02V12.85a3.759 3.759 0 0 0-3.754-3.756zm4.853-3.029h-2.47a3.615 3.615 0 0 1-1.116 2.518 4.463 4.463 0 0 1 3.188 4.27v.939c2.438-.09 3.844-.78 3.936-.827l.196-.1H20V9.823a3.76 3.76 0 0 0-3.755-3.756zM5 5.866a2.92 2.92 0 0 0 1.56-.452 3.63 3.63 0 0 1 1.364-2.315c.003-.055.008-.11.008-.165A2.933 2.933 0 1 0 5 5.867zm2.634 2.718A3.617 3.617 0 0 1 6.52 6.08c-.092-.006-.182-.014-.276-.014H3.756A3.76 3.76 0 0 0 0 9.822v3.044l.008.047.21.066c1.585.495 3 .723 4.229.795v-.92a4.464 4.464 0 0 1 3.188-4.27z"
+			fill="#465461"></path>
+		</symbol>
+		<symbol viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="references">
+			<path d="M7.805.34C3.495.34 0 3.533 0 7.473c0 1.997.9 3.8 2.348 5.096-.317 1.898-2.365 2.667-2.224 3.19 1.73.74 5.195-.89 6.041-1.314a8.5 8.5 0 0 0 1.64.161c4.31 0 7.805-3.193 7.805-7.133S12.115.34 7.805.34zM7.25 7.77c0 1.94-.829 3.028-2.462 3.234h-.01a.073.073 0 0 1-.05-.02.08.08 0 0 1-.026-.058V9.94a.08.08 0 0 1 .039-.069c.745-.42 1.117-1.082 1.136-2.022h-1.1a.078.078 0 0 1-.075-.079V5.29c0-.043.034-.079.076-.079h2.396c.042 0 .076.036.076.08V7.77zm4.243 0c0 1.91-.734 2.877-2.456 3.233l-.015.001a.078.078 0 0 1-.049-.017.08.08 0 0 1-.027-.061V9.94a.08.08 0 0 1 .039-.069c.745-.42 1.117-1.082 1.136-2.022h-1.1a.078.078 0 0 1-.075-.079V5.29c0-.043.034-.079.076-.079h2.395c.043 0 .076.036.076.08V7.77z"
+			fill="#465461"></path>
+		</symbol>
+	</svg>
+	<div class="header-profile">
+		
+
+		<div class="header-profile__navigation">
+			<div class="container container--navigation">
+				<div class="header-profile__logo">
+					<a href="index.html"><img class="logo__img" src="images/logo.svg" alt="logo"></a>
+				</div>
+				<h2 class="mobile-title">JobAbroad</h2>
+				<a class="mobile-menu"><img src="images/mobile-menu.svg"></a>
+				<nav class="header__nav">
+					<a class="nav__item item" href="404.html">Become a host</a>
+					<a class="nav__item item" href="404.html">Sign up</a>
+					<a class="nav__item item" href="404.html">Sign in</a>
+					<a class="nav__item item" href="404.html">About service</a>
+				</nav>
+			</div>
+
+		</div>
+		<div class="container">
+			<div class="row row-pading">
+				<div class="col-sm-12 col-lg-7 profile">
+					<div class="profile__dates">
+						<div class="profile__dates profile__dates--content">
+							<h3 class="profile__job-name">Repair of the house</h3>
+							<p class="map-name-mobile">Location: San-Sebastian, Basque Country, Spain</p>
+							<p class="profile__availability">Job offer is available for your dates!</p>
+							<div class="profile__dates-input">
+								<div class="profile__dates-input profile__dates-input--arrive">
+									<p class="profile__arrive">Arrive</p>
+									<input class="profile-input" type="text" name="arrive" id="depart">
+								</div>
+								<div class="profile__dates-input profile__dates-input--depart">
+									<p class="profile__arrive">Depart</p>
+									<input class="profile-input" type="text" name="arrive" id="arrive">
+								</div>
+								
+							</div>
+							<div class="profile__dates-button">
+								<ul class="button-list">
+									<li class="send-request button-list__item"><a class="button-list__link" href="../jobrequest/request.html">Send Request</a></li>
+									<li class="change-dates button-list__item"><a class="button-list__link" href="#depart">Change dates</a></li>
+									<li class="more button-list__item dropdown"><a class="button-list__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+										<div class="dropdown-menu" id="dropdown-mobile" aria-labelledby="navbarDropdown">
+											<a class="dropdown-item" href="#">Add friend</a>
+											<a class="dropdown-item" href="#">Write Reference</a>
+											<a class="dropdown-item" href="#">Report</a>
+											<a class="dropdown-item" href="#">Block</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="profile__dates profile__dates--image">
+							<img class="profile__img" src="images/profile_desktop.jpg">
+						</div>
+					</div>
+
+
+				</div>
+				<div class="col-sm-12 col-lg-5">
+					<div class="map" id="map"></div>
+					<p class="map-name">San-Sebastian, Basque Country, Spain</p>
+				</div>
+
+
+				<div class="col-sm-12 col-lg-7 tab-wrap">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#host" role="tab" aria-controls="home" aria-selected="true">Host info</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#offer" role="tab" aria-controls="profile" aria-selected="false">Job offer</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="contact-tab" data-toggle="tab" href="#Accomodation" role="tab" aria-controls="contact" aria-selected="false">Accomodation</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="contact-tab" data-toggle="tab" href="#Friends" role="tab" aria-controls="contact" aria-selected="false">Friends</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="contact-tab" data-toggle="tab" href="#References" role="tab" aria-controls="contact" aria-selected="false">References</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row row-pading">
+				<div class="col-sm-12 col-lg-7 hoster__wrapper tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="host" role="tabpanel" aria-labelledby="home-tab">
+						<div class="hoster">
+							<p class="hoster__title">Host info</p>
+							<div class="hoster__wrap">
+								<img class="hoster__photo" src="images/hoster_img.jpg"></img>
+								<div class="hoster__info">
+									<p class="hoster__name">Roberto Sanchez <a class="icon-mail" href="#"></a></p>
+									<div class="hoster__options row">
+										<div class="col-6">
+											<p class="references icon-wrap"><svg class="icon">
+												<use xlink:href="#references"></use>
+											</svg>10 references</p>
+											<p class="male icon-wrap"><svg class="icon">
+												<use xlink:href="#male"></use>
+											</svg>Male, 36 years</p>
+											<p class="language icon-wrap"><svg class="icon">
+												<use xlink:href="#earth"></use>
+											</svg>Speaks English, Spanish</p>
+										</div>
+										<div class="col-6">
+											<p class="friends icon-wrap"><svg class="icon">
+												<use xlink:href="#friends"></use>
+											</svg>10 friends</p>
+											<p class="location icon-wrap"><svg class="icon">
+												<use xlink:href="#geo"></use>
+											</svg>San Sebastian, Basque Country, Spain</p>
+											<p class="type-of-job icon-wrap"><svg class="icon">
+												<use xlink:href="#handyman"></use>
+											</svg>Repair of the house</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="offer" role="tabpanel" aria-labelledby="profile-tab"><p class="continue">To be continue...</p></div>
+					<div class="tab-pane fade" id="Accomodation" role="tabpanel" aria-labelledby="contact-tab"><p class="continue">To be continue...</p></div>
+					<div class="tab-pane fade" id="Friends" role="tabpanel" aria-labelledby="contact-tab"><p class="continue">To be continue...</p></div>
+					<div class="tab-pane fade" id="References" role="tabpanel" aria-labelledby="contact-tab"><p class="continue">To be continue...</p></div>
+				</div>
+
+			</div>
+			<div class="row row-pading">
+				<div class="col-sm-12 col-lg-7 hoster__wrapper tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="host" role="tabpanel" aria-labelledby="home-tab">
+						<div class="hoster-about">
+							<h3 class="hoster-about__title">About me</h3>
+							<p class="hoster-about__text">Hola. <br> Me llamo Oscar, soy de San Sebastián y trabajo como profesor de Diseño Gráfico y Multimedia</p>
+							<p class="hoster-about__text">Why I’m on Couchsurfing</p>
+							<p class="hoster-about__text">To enjoy the world with everyone. I like meeting new people and sharing experiences</p>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="offer" role="tabpanel" aria-labelledby="profile-tab"><p class="continue">To be continue...</p></div>
+					<div class="tab-pane fade" id="Accomodation" role="tabpanel" aria-labelledby="contact-tab"><p class="continue">To be continue...</p></div>
+					<div class="tab-pane fade" id="Friends" role="tabpanel" aria-labelledby="contact-tab"><p class="continue">To be continue...</p></div>
+					<div class="tab-pane fade" id="References" role="tabpanel" aria-labelledby="contact-tab"><p class="continue">To be continue...</p></div>
+				</div>
+
+			</div>
+			
+			<div class="profile-button-wrapper">
+				<a href="search.html" class="profile-button">Back to search</a>
+			</div>
+		</div>
+		
+	</div>
+	<footer class="footer">
+			<div class="container">
+
+				<div class="profile-footer">
+					<p class="profile-footer__text">&copy; 2019 JobAbroad, Inc. All rights reserved</p>
+
+					<div class="profile-footer__item">
+
+					<a href="#" class="profile-footer__link icon-twitter"></a>
+					<a href="#" class="profile-footer__link icon-facebook"></a>
+					<a href="#" class="profile-footer__link icon-instagram"></a>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+
+
+	<!-- Scripts -->
+	<!--build:js js/main.min.js -->
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/jquery-ui/jquery-ui.min.js"></script>
+
+	<script src="js/libs/bootstrap.bundle.min.js"></script>
+	<script src="js/libs/bootstrap-select.min.js"></script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-APZUYsZ8n1DhyE4Y5YgMJlTTg0ek9ng&callback=initMap">
+</script>
+<script src="js/main.js"></script>
+<!--endbuild-->
+</body>
+</html>
